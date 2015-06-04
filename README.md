@@ -23,7 +23,7 @@ Find in `java` directory a maven project.
     
 A successful build creates `serverdemo.war` which can be put in Tomcat `webapps` directory and called like,
 
-    http://localhost:8080/notify?sign=4c8434ce16e71eaf418796f6cd951085&app_order_id=123456&coin_order_id=12345&consume_amount=1000&credit_amount=50&is_success=T&ts=1431675944825
+    http://localhost:8080/serverdemo/notify?sign=4c8434ce16e71eaf418796f6cd951085&app_order_id=123456&coin_order_id=12345&consume_amount=1000&credit_amount=50&is_success=T&ts=1431675944825
     
 Since the HTTP call is issued by Baodian server in production environment, you have to make your server accessible over Internet.
 
