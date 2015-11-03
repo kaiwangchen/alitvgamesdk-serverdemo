@@ -24,7 +24,7 @@ public class NotifyServlet extends HttpServlet {
 		try {
 			BaodianConsumptionNotification notification = BaodianConsumptionNotification.buildFrom(request);
 
-			if (notification.verify(BAODIAN_SECRET)) {
+			if (!notification.verify(BAODIAN_SECRET)) {
 				throw new RuntimeException("Illegal signature");
 			}
 			
